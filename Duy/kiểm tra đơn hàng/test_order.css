@@ -1,0 +1,122 @@
+/* Afternoon monday, jan,7,2019*/
+
+
+/* trang chủ && KTĐH*/
+#move ul li{
+	float: left;
+	font-weight: 600;
+	font-size: 16px;
+	padding: 5px 10px;
+	transform: skew(-15deg);
+	border-radius: 6px;
+	transition: all 1s;
+	padding-left: 2px;
+
+
+}
+#move{
+	overflow: hidden;
+}
+#move ul {
+	list-style: none;
+}
+/* trang chu*/
+#child1 a, #child2 i{
+	color: #727272;
+	text-decoration: none;
+}
+/* kiểm tra đơn hàng - KTĐH*/
+
+#title{
+
+	overflow: hidden;
+	float: left;
+	margin: 10px;
+	
+}
+#title h6{
+	border-left: solid 5px #f76d2c;;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+/* input*/
+#InputName{
+	min-width: 30%;
+	margin-left: 10px;
+
+}
+/*input : label*/
+#search{
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+#search  label{
+	font-size: 20px;
+}
+/* button : xem ngay*/
+#see{
+	font-weight: 600;
+	background-color: #3f3f3f;
+	border-radius: 30px;
+	border: none;
+	padding: 10px;
+	color: white;
+	margin-left: 10px;
+	transition: 0.3s;
+}
+@media (max-width: 500px){
+	#see{
+		margin-top: 20px;
+	}
+}
+#see:hover{
+	background-color: #f76d2c;
+		animation-name: lac;
+	animation-duration: 1.5s; 
+	animation-iteration-count: infinite; 
+}
+@keyframes lac{
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(8deg);}
+	20%{transform: rotate(-16deg);}
+	30%{transform: rotate(8deg);}
+	40%{transform: rotate(-16deg);}
+	50%{transform: rotate(0deg);}
+	100%{transform: rotate(0deg);}
+
+}
+/* label error*/
+#er_input1{
+	position:absolute;
+	opacity: 0;
+	transition: all .5s;
+	top: 34px;
+	left: 200px
+
+}
+#er_input1 div{
+	position: relative;
+	width: 1px;
+	height: 1px;
+	border-top: solid 10px transparent ;
+	border-bottom: solid 10px red;
+	border-left: solid 10px transparent;
+	border-right: solid 10px transparent;
+	left: 18px;
+}
+#er_input1 label{
+	font-size: 16px;
+	background-color: red;
+	border-radius: 6px;
+	color: white;
+	font-weight: 600;
+	padding: 5px 15px;
+
+}
+@media (max-width: 575px ){
+	#er_input1{
+		top: 75px;
+		left: 126px;
+	}
+}
+

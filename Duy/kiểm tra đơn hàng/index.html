@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kiểm tra đơn hàng</title>
+
+	<link rel="icon" href="../../anh/icon.png">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="../everything/animate.css">
+
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="../everything/wow.min.js"></script>
+	<script>
+		new WOW().init (); 
+	</script>
+
+	<script src="../jquery-3.3.1.min.js"></script>
+	
+	<script src="test_order.js"></script>
+
+	<script src="../everything/jquery-ui.min.js"></script>
+
+	<link rel="stylesheet" href="../everything/style.css">
+
+	<link rel="stylesheet" href="test_order.css">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<script>
+
+		$(function(){
+			$('.carousel').carousel({
+				interval:3000
+			});
+		});
+
+
+		$(document).ready(function($) {
+			$('.slick.marquee').slick({
+				speed: 5000,
+				autoplay: true,
+				autoplaySpeed: 0,
+				centerMode: true,
+				cssEase: 'linear',
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				variableWidth: true,
+				infinite: true,
+				initialSlide: 1,
+				arrows: false,
+				buttons: false
+			});
+		});
+	</script>
+	<div class="wrapper page-home">
+		<!-- phần header -->
+		<div class="header">
+
+			<!-- phần menutop	 -->
+			<nav class="navbar navbar-expand-lg fixed-top navbar-light background-menu menutopp  wow slideInLeft">
+				<a href="tel:0961695701" >
+					<i class="fa fa-phone-volume" style="color: red;"></i>
+					Hotline:0961695701
+				</a>
+				<a class="navbar-brand" href="index.html" style="padding-left: 120px"><img src="images/logo.png" alt="" width="80" height="60" id="logo" ></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"  >
+					<ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html">
+								<i class="fa fa-pencil-ruler"></i>
+							Kiểm tra đơn hàng</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../Giỏ hàng/index.html">
+								<i class="fa fa-shopping-cart"></i>
+							Giỏ hàng</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../sign up/index.html">
+								<i class="fa fa-sign-in-alt"></i>
+							Đăng ký</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="../log in/login.html">
+								<i class="fa fa-key"></i>
+							Đăng nhập</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="navigation-menu clearfix" style="margin-top: 80px;" >	
+				<img src="../../anh/logo.png" alt="" width="175" height="87.5" class=" wow slideInLeft">
+				<nav class="navbar navbar-expand-lg navbar-light  fa-pull-right  wow slideInRight">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav content">
+							<li class="nav-item">
+								<a class="nav-link" href="../../index.html">TRANG CHỦ</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="file:///C:/Users/ntman/Downloads/1/index.html">GIỚI THIỆU</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="file:///C:/Users/ntman/Downloads/2/index.html">SẢN PHẨM</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="file:///C:/Users/ntman/Downloads/3/index.html">TIN TỨC</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="file:///C:/Users/ntman/Downloads/4/index.html">LIÊN HỆ</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</section>
+		<!-- /phần menutop -->
+
+
+			<!-- phần thân -->
+			<div class="container" id="bx">
+				<div class="row">
+					<div class="col-md-12">
+						<div id="move">
+							<ul>
+								<li id="child1"  class="wow slideInLeft" ><a href="../../index.html">TRANG CHỦ </a></li>
+								<li id="child2"  class="wow slideInLeft"><i class="fas fa-angle-double-right"></i></li>
+								<li id="child3" class="wow slideInDown" data-wow-delay=".2s" style="color: #f76d2c;"> Kiểm Tra Đơn Hàng </li>
+							</ul>
+						</div>
+						<div id="title">
+							<h6 class="wow slideInDown"  data-wow-delay=".4s" data-wow-delay=".2s">KIỂM TRA ĐƠN HÀNG</h6>
+						</div>
+					</div>
+				</div>
+				<!-- nhập mã đơn hàng -->
+				<div class="row wow flipInX"  style="background-color: #e5e5e5; padding: 10px;" id="search">
+					<form class="form-inline col-md-12"  >
+						<div class="form-group" style="width: 100%; position: relative;">
+							<label for="exampleInputName2">Nhập mã đơn hàng</label>
+							<input type="text" class="form-control" id="InputName" placeholder="Mã số đơn hàng (VD:123456)">
+							<div id="er_input1">
+								<div style=""></div>
+								<label for="" style="" id="error_input1"></label>
+							</div>
+
+							<button  type="button" id="see" class="wow tada" data-wow-delay=".6s" >XEM NGAY</button>
+						</div>
+
+					</form>
+				</div>
+			</div>
+			<!-- /phần thân -->
+
+
+
+
+			<!-- phần footer -->
+			<div class="footer">
+
+				<div class="footer-content clearfix ">
+					<div class="container">
+						<div class="row wow flipInX ">
+							<div class="footer-box col-md-3 col-sm-12 col-xs-12">
+								<div class="item">
+									<h3>
+										<span>Giới thiệu</span>
+									</h3>
+								</div>
+								<ul>
+									<li>
+										<a href="/gioi-thieu.html">
+											Về chúng tôi
+										</a>
+									</li>
+									<li>
+										<a href="/content/linh-vuc-hoat-dong.html">
+											Lĩnh vực hoạt động
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer-box col-md-3 col-sm-12 col-xs-12">
+								<div class="item">
+									<h3>
+										<span>Trợ giúp</span>
+									</h3>
+								</div>
+								<ul>
+									<li>
+										<a href="/content/huong-dan-thanh-toan.html">
+											Hướng dẫn thanh toán
+										</a>
+									</li>
+									<li>
+										<a href="/content/quy-dinh-doi-tra.html">
+											Quy định đổi trả
+										</a>
+									</li>
+									<li>
+										<a href="/content/chinh-sach-ban-hang.html">
+											Chính sách bán hàng
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer-box box-address col-md-3 col-sm-12 col-xs-12">
+								<div class="item">
+									<h3>
+										<span>Thông tin công ty</span>
+									</h3>
+									<div class="box-address-content">
+										<b style="color: #bfbfbf;">NT-MẠNH</b>
+										<p style="color: #bfbfbf;"><i class="fa fa-map-marker"></i> hà nội</p>
+										<p>
+											<i class="fa fa-envelope"style="color: #bfbfbf;"></i>
+											<a href="mailto:bjinlee1001@gmail.com"style="color: #bfbfbf;">bjinlee1001@gmail.com</a>
+										</p>
+										<p style="color: #bfbfbf;">
+											<i class="fa fa-phone" style="color: #bfbfbf;"></i>
+											Phone: 0961695701
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="footer-box box-social col-md-3 col-sm-12 col-xs-12">
+								<div class="item">
+									<h3>
+										<span>Facebook</span>
+									</h3>
+									<div class="social-icon">
+										<ul>
+											<li><a target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+											<li><a href="https://www.facebook.com/runtime.vn" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a target="_blank"><i class="fab fa-youtube"></i></a></li>
+											<li><a target="_blank"><i class="fab fa-twitter "></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-bottom clearfix wow slideInLeft">
+						<div class="container">
+							<div class="row" style="color: #bfbfbf;">
+								© 2015 RUNTIME Store. All Rights Reserved. Designed by
+								<a href="https://www.facebook.com/Ngtienmanh1001" target="_blank" style="color: #bfbfbf;"> DMPSHOP.RUNTIME.VN</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /phần footer -->
+		</body>
+		</html>

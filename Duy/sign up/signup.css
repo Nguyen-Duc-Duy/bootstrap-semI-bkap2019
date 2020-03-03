@@ -1,0 +1,334 @@
+/* night tuesday ,january*/
+
+body{
+	font-family: sans-serif;
+}
+
+/* tiêu đề chung*/
+#move ul li{
+	float: left;
+	font-weight: 600;
+	font-size: 16px;
+	padding: 5px 10px;
+	transform: skew(-15deg);
+	border-radius: 6px;
+	transition: all 1s;
+	padding-left: 2px;
+
+}
+#move{
+	overflow: hidden;
+}
+#move ul {
+	padding-left: 10px;
+	list-style: none;
+}
+/* trang chu*/
+#child1 a,#child2 i{
+	color: #727272;
+	text-decoration: none;
+	transition: all .5s;
+}
+.title{
+
+	overflow: hidden;
+	float: left;
+	margin: 10px;
+	
+}
+.title h6{
+	border-left: solid 4px #f76d2c;;
+	padding-left: 10px;
+	padding-top: 5px;
+	text-align: left;
+}
+
+
+/* video*/
+#video{
+	width: 530px;
+	 height: 300px;
+	 margin-top: 160px;
+}
+@media (max-width: 700px){
+	#video{
+	 margin-top: -18px;
+	 width: 340px;
+	 height: 180px;
+	 
+	}
+
+}
+@media (max-width: 767px){
+	#video{
+		margin-top: 10px;
+	}
+}
+@media (max-width: 1200px){
+	#video{
+		width: 300px; 
+	}
+}
+
+/* tài khoản*/
+#acc{
+	width: 100%;
+}
+#acc ul{
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+#acc a{
+	text-decoration: none;
+	color: #727272;
+	font-size: 16px;
+	transition-delay: 3s;
+	transition: .5s all; 
+}
+#acc i{
+	color: #727272;
+	margin-right: 15px;
+	font-size: 16px;
+	padding-left: 3px;
+
+}
+#acc li{
+	padding: 15px 0;
+	border-top: solid 1px #cccccc;
+	width: 100%;
+	position: relative;
+
+}
+#acc li a:hover {
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f76d2c;
+  padding: 0;
+
+}
+
+
+
+
+@media (max-width: 766px){
+	#acc li{
+		text-align: center;
+		
+	}
+}
+
+/*<!--  đăng ký tài khoản -->*/
+
+/*form đăng ký*/
+
+#signup h2{
+	color: #f76d2c;
+	font-size: 16px;
+	border-bottom: dotted 1px #bfbfbf;
+	margin-bottom: 30px;
+}
+
+
+
+
+form .form-group{
+	height: 36px;
+}
+@media (max-width: 570px){
+	form .form-group{
+		height: 60px;
+	}
+	.year:first-child{
+		width: 120px;
+	}
+	.year{
+
+		width: 110px;
+		float: left;
+	}
+
+	.year:last-child{
+		width: 180px;
+	}
+}
+
+
+/*lable error */
+
+#er_input2,#er_input1,#er_input5,#er_input4,#er_input3{
+	position: absolute;
+	visibility: hidden;
+	z-index: 999999;
+	margin-top: -20px;
+	font-size: 12.5px;
+	transition: .5s;
+	display: block;
+}
+#er_input2 span,#er_input1 span,#er_input3 span,#er_input4 span,#er_input5 span{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	border-top: solid 10px transparent ;
+	border-bottom: solid 10px transparent;
+	border-left: solid 10px #fc2020;
+	border-right: solid 10px transparent;
+	top: 30%;
+	left: 184px;
+	line-height: 100;
+}
+#er_input2 label,#er_input1 label,#er_input3 label,#er_input4 label,#er_input5 label{
+	margin-top: 10px;
+	background-color: #fc2020;
+	border-radius: 6px;
+	color: white;
+	font-weight: 600;
+	padding: 5px 5px;
+	width: 185px;
+	text-align: center;
+
+
+
+}
+@media (max-width: 700px){
+	#er_input2,#er_input5,#er_input4,#er_input3{
+	
+		top: -10px;
+		left: 300px;
+	}
+	#er_input1{
+		top: -26px;
+		left: 300px;
+	}
+	#er_input2 label,#er_input1 label,#er_input3 label,#er_input4 label,#er_input5 label{
+		width: 230px;
+		margin-bottom: 0px;
+
+	}
+	#er_input2 span,#er_input1 span,#er_input3 span,#er_input4 span,#er_input5 span{
+
+		border-top: solid 10px #fc2020 ;
+	border-bottom: solid 10px transparent;
+	border-left: solid 10px transparent;
+	border-right: solid 10px transparent;
+	position: initial;
+	float: left;
+	margin: 0 40px;
+
+	}
+}
+#input1,#input2,#input3,#input4,#input5{
+	box-shadow: 0 0 0 0 transparent;
+	
+}
+#input_1,#input_2,#input_3,#input_4,#input_5{
+	position: relative;
+}
+.showhide{
+	text-align: center;
+	width: 50px;
+	font-size: 15px
+}
+.showhide:hover .i{
+	cursor: pointer;
+	font-size: 20px;
+}
+#ipex1,#ipex2{
+	border-radius: 5px;
+}
+
+
+/* label title*/
+
+.nhap{
+	text-align: right;
+}
+@media (max-width: 575px){
+	.nhap{
+		text-align: left;
+	}
+
+}
+
+/*typesex*/
+
+#typesex{
+		width: 100%;
+		height: 130px;
+
+}
+#typesex img{
+    
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	left: 10px;
+
+
+}
+@media (max-width: 575px){
+	#typesex img{
+		margin-left: 160px;
+	}
+}
+
+#img1{
+  z-index: 3;
+  animation-duration: 1s;
+  
+}
+#img2{
+  z-index: 2;
+  animation-duration: 1s;
+  	
+}
+
+@keyframes animate{
+	0%{ transform: scale(1); }
+	25%{transform: scale(1.2);}
+	50%{transform: scale(1.2);}
+	75%{transform: scale(1);}
+	100%{transform: scale(1);}
+}
+
+/* button đăng ký*/
+#click{
+	border: none;
+	background-color: #3f3f3f;
+	border-radius: 20px;
+	color: white;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 8px 15px;
+	transition: 0.5s;
+}
+#click:hover{
+	background-color: #f76d2c;
+		animation-name: lac;
+	animation-duration: 1.5s; 
+	animation-iteration-count: infinite; 
+}
+@keyframes lac{
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(8deg);}
+	20%{transform: rotate(-16deg);}
+	30%{transform: rotate(8deg);}
+	40%{transform: rotate(-16deg);}
+	50%{transform: rotate(0deg);}
+	100%{transform: rotate(0deg);}
+
+}
+#remember{
+	text-decoration: none;
+	color: gray;
+}
+#remember:hover{
+	color: #f76d2c;
+}
+@media (max-width: 575px){
+	#click{
+		margin-left: 120px;
+	}
+}

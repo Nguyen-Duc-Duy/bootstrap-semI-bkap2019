@@ -1,0 +1,180 @@
+/*afternoon tuesday , january, 8, 2019*/
+
+/* tieu de chung*/
+body{
+	font-family: sans-serif;
+}
+#move ul li{
+	float: left;
+	font-weight: 600;
+	font-size: 16px;
+	padding: 5px 10px;
+	transform: skew(-15deg);
+	border-radius: 6px;
+	transition: all 1s;
+	padding-left: 2px;
+
+
+}
+.showhide:hover{
+	cursor: pointer;
+}
+#move{
+	overflow: hidden;
+}
+#move ul {
+	padding-left: 10px;
+	list-style: none;
+}
+/* trang chu*/
+#child1 a,#child2 i{
+	color: #727272;
+	text-decoration: none;
+}
+
+
+.title{
+
+	overflow: hidden;
+	float: left;
+	margin: 10px;
+	
+}
+.title h6{
+	border-left: solid 4px #f76d2c;;
+	padding-left: 10px;
+	padding-top: 5px;
+	text-align: left;
+}
+/* tài khoản*/
+#acc{
+	width: 100%;
+}
+#acc ul{
+list-style: none;
+padding: 0;
+width: 100%;
+}
+#acc a{
+	text-decoration: none;
+	color: #727272;
+	font-size: 16px;
+		transition-delay: 3s;
+	transition: .5s all;
+
+}
+ #acc i{
+color: #727272;
+margin-right: 15px;
+font-size: 16px;
+padding-left: 3px;
+
+
+}
+#acc li{
+padding: 15px 0;
+border-top: solid 1px #cccccc;
+width: 100%;
+
+
+}
+
+@media (max-width: 766px){
+	#acc li{
+		text-align: center;
+		
+	}
+}
+#acc li a:hover {
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f76d2c;
+  padding: 0;
+}
+/* đăng nhập hệ thống */
+/*label title*/
+.nhap{
+text-align: right;
+font-size: 18px;
+}
+
+@media (max-width: 575px){
+	.nhap{
+text-align: left;
+}
+}
+/* form*/
+.form-group{
+	height: 72px;
+}
+#input1{
+	box-shadow: 0 0 0 0 transparent;
+}
+
+/* label error*/
+#er_input2,#er_input1{
+	position: relative;
+	opacity: 0;
+	transition: all .5s;
+
+}
+#er_input2 div,#er_input1 div{
+position: absolute;
+width: 1px;
+height: 1px;
+border-top: solid 10px transparent ;
+border-bottom: solid 10px #fc2020;
+border-left: solid 10px transparent;
+border-right: solid 10px transparent;
+top: -10px;
+left: 18px;
+}
+#er_input2 label,#er_input1 label{
+	margin-top: 10px;
+	background-color: #fc2020;
+	border-radius: 6px;
+	color: white;
+	font-weight: 600;
+	padding: 5px 15px;
+	font-size: 16px;
+
+}
+
+/* button đăng nhập*/
+#click{
+	border: none;
+	background-color: #f76d2c;
+	border-radius: 20px;
+	color: white;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 8px 15px;
+	transition: 0.5s;
+}
+#click:hover{
+	background-color: #f76d2c;
+		animation-name: lac;
+	animation-duration: 1.5s; 
+	animation-iteration-count: infinite; 
+}
+@keyframes lac{
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(8deg);}
+	20%{transform: rotate(-16deg);}
+	30%{transform: rotate(8deg);}
+	40%{transform: rotate(-16deg);}
+	50%{transform: rotate(0deg);}
+	100%{transform: rotate(0deg);}
+
+}#remember{
+	text-decoration: none;
+	color: gray;
+}
+#remember:hover{
+	color: #3f3f3f;
+}
+@media (max-width: 570px){
+	form .form-group{
+	height: 100px;
+}

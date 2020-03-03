@@ -1,0 +1,221 @@
+/* night monday , january , 7 , 2019*/
+
+/*<!--  tiêu đề chung -->*/
+
+.container{
+	overflow: hidden;
+	font-family: sans-serif;
+	
+}
+#move ul li{
+	float: left;
+	font-weight: 600;
+	font-size: 15px;
+	padding: 5px 10px;
+	transform: skew(-15deg);
+	border-radius: 6px;
+	transition: all 1s;
+	padding-left: 2px;
+
+}
+#move{
+	overflow: hidden;
+}
+#move ul {
+	list-style: none;
+}
+
+#child1 a,#child2 i{
+	color: #727272;
+	text-decoration: none;
+}
+
+#title{
+	overflow: hidden;
+	margin: 10px;
+	
+}
+#title h6{
+	border-left: solid 5px #f76d2c;;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+/* thông tin đơn hàng được chọn*/
+
+/* progrees*/
+.run{
+	padding:0;
+	text-align: center;
+	color: #a5a5a5;
+	font-size: 18px;
+	margin-top: 50px; 
+	float: left;
+	
+
+}
+.run i{
+	margin: 10px 0;
+	font-size: 30px;
+}
+.run .ray{
+	margin-top: 30px; 
+	width: 100%;
+	background-color: #a5a5a5;
+	height: 2px;
+	position: relative;
+}
+.ray{
+	color: white;
+
+}
+.ray a{
+	font-weight: 900;
+	text-align: center;
+	background-color: #a5a5a5;
+	padding: 10px 15px;
+	position: absolute;
+	border-radius: 50px;
+	top: -20px;
+
+
+
+}
+@media (max-height: 1024px){
+	.run{font-size: 15px;}
+}
+@media (max-width:1370px ){
+
+	.ray a{left: 40%;}
+}
+@media (max-width: 768px){
+	.ray a{left: 46%;}
+}
+/* thông tin sản phẩm đã chọn*/
+#tieude{
+	margin-top: 40px; 
+
+}
+#tieude>td{
+	border-bottom: solid 2px gray;
+}
+#tieude td{
+	text-align: center;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 600;
+
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #fdfdfd 0%, #f4f4f4 100%) repeat scroll 0 0 !important;
+}
+#tieude div:nth-child(3) div{
+	margin: 0;
+	padding: 0;
+}
+@media (max-width: 798px){
+	#tieude td{
+		font-size: 12px;
+	}
+	#tieude{
+		border-top: solid 1px lightgray ;
+		border-left: solid 1px lightgray;
+		border-right: solid 1px lightgray ;
+		margin-left: 5px;
+		margin-right: 5px; 
+	}
+
+}
+/* table*/
+.row_car{
+	width: 1150px;
+	
+}
+#bang{
+	padding: 20px 0;
+}
+#bang img{
+	width: 100px;
+}
+#bang ,#tieude,tr,table{
+	
+	width: 100%;
+}
+
+td{
+
+	text-align: center;
+	width: 19%;
+}
+@media (max-width: 765px){
+	#bang{
+		border-bottom:solid 1px lightgray ;
+		border-left:solid 1px lightgray ;
+		border-right:solid 1px lightgray ;
+	}
+	#bang{
+
+	margin-left: 5px;
+}
+}
+
+/* Tổng tiền*/
+#tongtien p{
+	float: right;
+	font-weight: 600;
+	font-size: 15px;
+}
+#tongtien span{
+	color: #f76d2c;;
+	font-size: 30px;
+	font-weight: 100;
+	margin-left: 10px;
+
+}
+/* continue*/
+#continue,#end{
+	border-radius: 20px;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	float: right;
+	transition: all .5s;
+}
+#continue{
+	background-color: #3f3f3f;
+}
+#end{
+	margin-left: 5px;
+	background-color: #3f3f3f;
+}
+
+#continue:hover{
+	background-color: #f76d2c;
+		animation-name: lac;
+	animation-duration: 1.5s; 
+	animation-iteration-count: infinite; 
+}
+@keyframes lac{
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(5deg);}
+	20%{transform: rotate(-10deg);}
+	30%{transform: rotate(5deg);}
+	40%{transform: rotate(-10deg);}
+	50%{transform: rotate(0deg);}
+	100%{transform: rotate(0deg);}
+}
+
+#end:hover{
+	background-color: #f76d2c;
+		animation-name: lac;
+	animation-duration: 1.5s; 
+	animation-iteration-count: infinite; 
+}
+@keyframes lac{
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(5deg);}
+	20%{transform: rotate(-10deg);}
+	30%{transform: rotate(5deg);}
+	40%{transform: rotate(-10deg);}
+	50%{transform: rotate(0deg);}
+	100%{transform: rotate(0deg);}
+}
+
+
